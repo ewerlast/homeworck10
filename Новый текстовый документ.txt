@@ -1,0 +1,1 @@
+git remote add origin https://github.com/ewerlast/homeworck10.git
