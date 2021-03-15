@@ -5,9 +5,11 @@ let body = document.querySelector('body');
 createForm();
 let form = document.querySelector('form');
 for (let i = 0; i < 5; i++) {
-    createInput()
+    form.appendChild(createInput());
 }
 createSubmit();
+
+// в контексте этой функции я не знаю как по другому вставить элемент submit
 let submit = document.querySelector('.submit');
 
 form.addEventListener("submit", function(event) {
@@ -16,6 +18,10 @@ form.addEventListener("submit", function(event) {
 
 
 });
+
+// Зачем вешать "onclik" на каждую кнопку, если я могу его отловить по событию ?
+// Если появиться еще одна кнопка я ее просто добавлю в функцию и не надо будет придумывать еще функцию
+
 form.addEventListener("click", function(event) {
     let target = event.targrt
     console.log(event.target.className);
@@ -35,5 +41,4 @@ form.addEventListener("click", function(event) {
 
     }
 
-
-})
+});

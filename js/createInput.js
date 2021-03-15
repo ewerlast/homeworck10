@@ -33,7 +33,7 @@ function createInput() {
     buttonDelete.innerHTML = "Delete";
 
     let form = document.querySelector('form');
-    form.appendChild(divWrapperInput);
+    // form.appendChild(divWrapperInput);
     divWrapperInput.appendChild(input);
     divWrapperInput.appendChild(buttonEdit);
     divWrapperInput.appendChild(buttonDelete);
