@@ -32,10 +32,18 @@ function createInput() {
     buttonDelete.style.height = "25px";
     buttonDelete.innerHTML = "Delete";
 
-    let form = document.querySelector('form');
+    // let form = document.querySelector('form');
     // form.appendChild(divWrapperInput);
     divWrapperInput.appendChild(input);
     divWrapperInput.appendChild(buttonEdit);
     divWrapperInput.appendChild(buttonDelete);
     return divWrapperInput;
 }
+// если писать чистую функцию, то тут лучше использовать 
+//  class Input{
+//     constructor();
+//     metod(){
+//         return ... input
+//     }
+// }
+// я попытался сделать class без класса т к  мы его еше не проходили
